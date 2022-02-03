@@ -103,15 +103,15 @@
         }
     }*/
 
-    .box{
+   /* .box{
         height:200px;
         width: 200px;
         position: relative;
         background-color: aquamarine;
-        transform: translate(500px,300px);
+        //transform: translate(500px,300px);
         transition: 2s ease-in;
         border-radius: 10px;
-        text-align: center;
+        text-align: center;}*/
         //animation-name: foo;
         //animation-duration: 4s;
     
@@ -127,12 +127,28 @@
 
         
         //transform: translateXY(400px);
-        &:hover{
-            transform: translateX(100px);
-            background-color: darkslategray;
-            transform:scaleX(-1.4)
+       /* .box:hover{
+            //transform: translateX(100px);
+            background-color: darkslategray;*/
+            //transform:scaleX(-1.4)
+            //transform: skewX(20deg);
+
             //transform: translateY(300px);
-            //transform: translateY(300px);
-        }
+            //transform: translateY(300px);*/
+        
     
+    .box{
+        width:200px;
+        height: 200px;
+        background-color: aquamarine;
+        border-radius: 20px;
+        transition: 5s ease-in-out;
+        text-align: center;
+        
+        &:hover{
+            //transform:skewX(25deg) rotateX(200deg);
+            transform:matrix( 1, -0.3, 0,1,0,0)
+        }
     }
+
+    

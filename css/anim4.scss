@@ -1,0 +1,76 @@
+@mixin myMix {
+    width: 100px;
+    height: 100px;
+    background-color:thistle;
+    border-radius: 3px;
+    border:2px solid white;
+   
+}
+
+body{
+    background-color: blue($color: #000000);
+    color: white;
+    
+}
+   /*.box{ 
+       width: 100px;
+       height: 100px;
+       border:2px solid white;
+       background-color: thistle;
+       transition: all 6s;
+       &:hover{
+           width: 400px;
+           height: 300px;
+           transform: rotate(90deg 180deg);
+       }
+   }*/
+
+       
+       
+
+    
+  /* #aPlus{
+       padding:20px 10px 20 40px;
+       font-size: 1px;
+
+   }
+}*/
+.box{
+   @include myMix;
+   transition: all 3s;
+   transform: translateX(800px);
+   transition-timing-function: linear;
+  
+    }
+    
+
+.box1{
+    @include myMix;
+    transition: all 3s;
+    transform: translateX(800px);
+    transition-timing-function: ease-in;
+    
+    }
+    .box2{
+        @include myMix;
+        transition: all 3s;
+        transform: translateX(800px);
+        transition-timing-function: ease-in-out;
+        
+        }
+        
+    
+.box3{
+   @include myMix;
+    transition-timing-function: ease-out;
+    
+    transition: all 3s;
+    transform: translateX(800px);
+    
+    }
+   
+   
+
+
+      
+  

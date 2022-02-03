@@ -96,31 +96,37 @@ body {
             top: 0px;
         }
     }*/
-.box {
-  height: 200px;
-  width: 200px;
-  position: relative;
-  background-color: aquamarine;
-  -webkit-transform: translate(500px, 300px);
-          transform: translate(500px, 300px);
-  -webkit-transition: 2s ease-in;
-  transition: 2s ease-in;
-  border-radius: 10px;
-  text-align: center;
-  /*@keyframes foo{
+/* .box{
+        height:200px;
+        width: 200px;
+        position: relative;
+        background-color: aquamarine;
+        //transform: translate(500px,300px);
+        transition: 2s ease-in;
+        border-radius: 10px;
+        text-align: center;}*/
+/*@keyframes foo{
         from {
             transform: translateX(0px);
         }
         to{
             transform: translate(200px,500px);
         }*/
+/* .box:hover{
+            //transform: translateX(100px);
+            background-color: darkslategray;*/
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  border-radius: 20px;
+  -webkit-transition: 5s ease-in-out;
+  transition: 5s ease-in-out;
+  text-align: center;
 }
 
 .box:hover {
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
-  background-color: darkslategray;
-  -webkit-transform: scaleX(-1.4);
-          transform: scaleX(-1.4);
+  -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+          transform: matrix(1, -0.3, 0, 1, 0, 0);
 }
 /*# sourceMappingURL=animation.css.map */
