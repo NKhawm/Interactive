@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+}
+
+h2 {
+  color: white;
+}
+
+.box {
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: white;
+  color: tomato;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+  -webkit-transition: 4s ease-out;
+  transition: 4s ease-out;
+  -webkit-animation-name: box;
+          animation-name: box;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.box #text {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6px;
+  font-size: 89px;
+  opacity: 100%;
+  -webkit-animation-name: text;
+          animation-name: text;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes box {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-radius: 20px;
+    background-color: #fab4fa;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-radius: 180px;
+    background-color: #8e348e;
+  }
+}
+
+@keyframes box {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-radius: 20px;
+    background-color: #fab4fa;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-radius: 180px;
+    background-color: #8e348e;
+  }
+}
+
+@-webkit-keyframes text {
+  from {
+    font-size: 0px;
+    opacity: 0%;
+  }
+}
+
+@keyframes text {
+  from {
+    font-size: 0px;
+    opacity: 0%;
+  }
+}
+
+to {
+  font-size: 89px;
+  opacity: 100%;
+}
+/*# sourceMappingURL=anim5.css.map */

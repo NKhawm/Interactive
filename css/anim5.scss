@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+
+}
+h2{
+    color:white;
+    
+}
+.box{
+    border:2px solid white;
+    border-radius: 20px;
+    background-color:white;
+    color:tomato;
+    padding:10px;
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    //transform:rotate(360deg) ;
+    transition:  4s ease-out;
+    animation-name: box;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+   
+   #text{
+    text-align: center;
+    align-items: center;
+    margin-top: 6px;
+    font-size: 89px;
+    opacity: 100%;
+    animation-name: text;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+} 
+@keyframes box{
+    from{
+         transform:rotate(0deg);
+            border-radius: 20px;
+            background-color: rgb(250, 180, 250);}
+           
+    
+    to{
+        transform:rotate(360deg);
+    border-radius: 180px;
+    background-color: rgb(142, 52, 142);}
+
+    }
+   
+    
+    @keyframes text{
+        from{
+            font-size: 0px;
+            opacity: 0%;
+        }
+       
+       
+        }
+        to{
+            font-size: 89px;
+            opacity: 100%;
+            
+        }
+    
