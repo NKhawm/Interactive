@@ -1,0 +1,15 @@
+body {
+  margin: 80px;
+  font-size: larger;
+}
+
+h1 {
+  text-align: center;
+}
+
+.data,
+.questions {
+  background-color: #7aa3b3;
+  text-align: center;
+}
+/*# sourceMappingURL=survey.css.map */

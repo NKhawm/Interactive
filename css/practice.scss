@@ -1,0 +1,212 @@
+$hcolor:rgb(109, 94, 109);
+$bgcolor:thistle;
+$acolor:rgb(102, 133, 119);
+$ycolor:rgb(74, 31, 74);
+body {
+    box-sizing: border-box;
+    margin: 5px;
+    background-color: $bgcolor;
+}
+
+header {
+    background-color: $hcolor;
+    text-align: center;
+    height: 10vh;
+    padding-top: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    margin-top: 0px;
+    font-family: 'Amiri', serif;
+    //border: 1px solid white;
+    padding-top: 20px;
+    color: white;
+}
+
+#img1 {
+    width: 65px;
+    height: 65px;
+    border: 2px solid $bgcolor;
+    position: relative;
+    border-radius: 100px;
+    margin-top: 4px;
+    margin-left: 4px;
+    animation-name: img1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img1 {
+    0% {
+        border-radius: 100px;
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        border-radius: 20px;
+        left: 100px;
+        top: 0px;
+    }
+    100% {
+        border-radius: 0 50px 0 50px;
+        left: 220px;
+        top: 0px;
+    }
+}
+
+#img2 {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    border: 2px solid $bgcolor;
+    border-radius: 100px;
+    margin-top: 4px;
+    //margin-right: 4px;
+    animation-name: img2;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes img2 {
+    0% {
+        border-radius: 100px;
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        border-radius: 20px;
+        left: -100px;
+        top: 0px;
+    }
+    100% {
+        border-radius: 50px 0px 50px 0px;
+        left: -700px;
+        top: 0px;
+    }
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 80px;
+        font-size: larger;
+        li {
+            display: flex;
+            text-align: center;
+            border: 2px solid gainsboro;
+            padding: 6px 20px 6px 20px;
+            border-radius: 15px;
+            &:hover {
+                background-color: rgb(237, 146, 192);
+                transition: 0.5s ease-in-out;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    .firstPart {
+        background-color: $ycolor;
+        width: 90%;
+        border: 4px solid gray;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 8px;
+        section {
+            border: 1px solid grey;
+            border-radius: 10px;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: $acolor;
+            font-size: larger;
+            color: white;
+            &:hover {
+                opacity: 80%;
+                background-color: $bgcolor;
+            }
+        }
+    }
+}
+
+.aside {
+    background-color: $ycolor;
+    width: 90%;
+    border: 4px solid gray;
+    border-radius: 10px;
+    margin: 35px;
+    padding: 8px;
+    margin-left: -30px;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    animation-name: aside;
+    animation-duration: 10s;
+}
+
+@keyframes aside {
+    0% {
+        background-color: $ycolor;
+    }
+    25% {
+        background-color: $acolor;
+        border-radius: 0 80px 0px 80px;
+    }
+    50% {
+        background-color: $hcolor;
+    }
+    75% {
+        background-color: $bgcolor;
+        color: black;
+        border-radius: 80px 0 80px 0;
+    }
+    100% {
+        background-color: $ycolor;
+    }
+}
+
+.secondPart {
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    width: 98.3%;
+    grid-column: span 2;
+    background-color: $ycolor;
+    font-size: larger;
+    color: white;
+    padding: 0 10px 0 10px;
+}
+
+footer {
+    background-color: rgb(48, 44, 44);
+    grid-column: span 2;
+    border-radius: 10px;
+    ul {
+        text-align: center;
+        list-style: none;
+        color: $acolor;
+        font-family: 'Amiri', serif;
+        font-size: 17px;
+    }
+}
+
+h2 {
+    color: $acolor;
+    text-align: center;
+}

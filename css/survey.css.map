@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,IAAI;EAEZ,SAAS,EAAE,MAAM;CACpB;;AAED,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,KAAK;AACL,UAAU,CAAC;EACP,gBAAgB,EAAE,OAAkB;EACpC,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "survey.scss"
+    ],
+    "names": [],
+    "file": "survey.css"
+}
