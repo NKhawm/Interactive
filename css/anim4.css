@@ -15,65 +15,289 @@ body {
            transform: rotate(90deg 180deg);
        }
    }*/
-/* #aPlus{
-       padding:20px 10px 20 40px;
-       font-size: 1px;
-
-   }
-}*/
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: thistle;
-  border-radius: 3px;
-  border: 2px solid white;
-  -webkit-transition: all 3s;
+/*.box{
+    width: 100px;
+    height: 100px;
+    background-color:thistle;
+    border-radius: 3px;
+    border:2px solid white;
   transition: all 3s;
-  -webkit-transform: translateX(800px);
-          transform: translateX(800px);
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+   transform: translateX(800px);
+   transition-timing-function: linear;
+   animation-name:animi;
+   animation-duration: 8s;
+   }
+   @keyframes animi{
+       from{
+           transform:translateX(0px);
+       }
+       50%{
+        transform:translateX(800px);
+       }
+       100%{
+        transform:translateX(0px);
+       }
+   }
+    
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color:thistle;
+    border-radius: 3px;
+    border:2px solid white;
+    transition: all 3s;
+    transform: translateX(800px);
+    transition-timing-function: ease-out;
+    animation-name: animi1;
+    animation-duration:8s;
+    
+    }
+
+    @keyframes animi1{
+        from{
+            transform:translateX(0px);
+        }
+        50%{
+         transform:translateX(800px);
+        }
+        100%{
+         transform:translateX(0px);
+        }
+    }
+    .box2{
+        width: 100px;
+    height: 100px;
+    background-color:thistle;
+    border-radius: 3px;
+    border:2px solid white;
+        transition: all 3s;
+        transform: translateX(800px);
+        transition-timing-function: ease-in-out;
+        animation-name: animi2;
+        animation-duration: 8s ease-in-out;
+        
+        }
+
+        @keyframes animi2{
+            from{
+                transform:translateX(0px);
+            }
+            50%{
+             transform:translateX(800px);
+            }
+            100%{
+             transform:translateX(0px);
+            }
+        }
+        
+    
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color:thistle;
+    border-radius: 3px;
+    border:2px solid white;
+    transition-timing-function: ease-in;
+    transition: all 3s;
+    transform: translateX(800px);
+    animation-name: animi3;
+    animation-duration: 8s;
+    
+    }
+
+    @keyframes animi3{
+        from{
+            transform:translateX(0px);
+        }
+        50%{
+         transform:translateX(800px);
+        }
+        100%{
+         transform:translateX(0px);
+        }
+    }*/
+.box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: yellow;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-animation-name: animi;
+          animation-name: animi;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes animi {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes animi {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 .box1 {
-  width: 100px;
-  height: 100px;
-  background-color: thistle;
-  border-radius: 3px;
+  width: 150px;
+  height: 150px;
   border: 2px solid white;
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  -webkit-transform: translateX(800px);
-          transform: translateX(800px);
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
+  border-radius: 20px;
+  background-color: cyan;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-animation-name: animi1;
+          animation-name: animi1;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes animi1 {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes animi1 {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 .box2 {
-  width: 100px;
-  height: 100px;
-  background-color: thistle;
-  border-radius: 3px;
+  width: 150px;
+  height: 150px;
   border: 2px solid white;
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  -webkit-transform: translateX(800px);
-          transform: translateX(800px);
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  border-radius: 20px;
+  background-color: palevioletred;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-animation-name: animi2;
+          animation-name: animi2;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes animi2 {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes animi2 {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 .box3 {
-  width: 100px;
-  height: 100px;
-  background-color: thistle;
-  border-radius: 3px;
+  width: 150px;
+  height: 150px;
   border: 2px solid white;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  -webkit-transform: translateX(800px);
-          transform: translateX(800px);
+  border-radius: 20px;
+  background-color: aquamarine;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-animation-name: animi3;
+          animation-name: animi3;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes animi3 {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes animi3 {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 /*# sourceMappingURL=anim4.css.map */

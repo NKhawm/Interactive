@@ -1,12 +1,10 @@
-@mixin myMix {
-    width: 100px;
-    height: 100px;
-    background-color:thistle;
-    border-radius: 3px;
-    border:2px solid white;
-   
+@mixin mybox {
+    width:150px;
+       height:150px;
+       border:2px solid white;
+       border-radius: 20px;
+    
 }
-
 body{
     background-color: blue($color: #000000);
     color: white;
@@ -26,49 +24,208 @@ body{
    }*/
 
        
-       
-
-    
-  /* #aPlus{
-       padding:20px 10px 20 40px;
-       font-size: 1px;
-
-   }
-}*/
-.box{
-   @include myMix;
-   transition: all 3s;
+/*.box{
+    width: 100px;
+    height: 100px;
+    background-color:thistle;
+    border-radius: 3px;
+    border:2px solid white;
+  transition: all 3s;
    transform: translateX(800px);
    transition-timing-function: linear;
-  
-    }
+   animation-name:animi;
+   animation-duration: 8s;
+   }
+   @keyframes animi{
+       from{
+           transform:translateX(0px);
+       }
+       50%{
+        transform:translateX(800px);
+       }
+       100%{
+        transform:translateX(0px);
+       }
+   }
     
 
 .box1{
-    @include myMix;
+    width: 100px;
+    height: 100px;
+    background-color:thistle;
+    border-radius: 3px;
+    border:2px solid white;
     transition: all 3s;
     transform: translateX(800px);
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    animation-name: animi1;
+    animation-duration:8s;
     
     }
+
+    @keyframes animi1{
+        from{
+            transform:translateX(0px);
+        }
+        50%{
+         transform:translateX(800px);
+        }
+        100%{
+         transform:translateX(0px);
+        }
+    }
     .box2{
-        @include myMix;
+        width: 100px;
+    height: 100px;
+    background-color:thistle;
+    border-radius: 3px;
+    border:2px solid white;
         transition: all 3s;
         transform: translateX(800px);
         transition-timing-function: ease-in-out;
+        animation-name: animi2;
+        animation-duration: 8s ease-in-out;
         
+        }
+
+        @keyframes animi2{
+            from{
+                transform:translateX(0px);
+            }
+            50%{
+             transform:translateX(800px);
+            }
+            100%{
+             transform:translateX(0px);
+            }
         }
         
     
 .box3{
-   @include myMix;
-    transition-timing-function: ease-out;
-    
+    width: 100px;
+    height: 100px;
+    background-color:thistle;
+    border-radius: 3px;
+    border:2px solid white;
+    transition-timing-function: ease-in;
     transition: all 3s;
     transform: translateX(800px);
+    animation-name: animi3;
+    animation-duration: 8s;
     
     }
+
+    @keyframes animi3{
+        from{
+            transform:translateX(0px);
+        }
+        50%{
+         transform:translateX(800px);
+        }
+        100%{
+         transform:translateX(0px);
+        }
+    }*/
    
+   .box{
+    @include mybox();
+       background-color: yellow;
+       transform:translateX(0px);
+       animation-name: animi;
+       animation-duration: 6s;
+       animation-timing-function: ease-in;
+
+   }
+   @keyframes animi{
+       from{
+           transform:translateX(0px);
+       }
+      
+       50%{
+        transform:translateX(800px);
+       }
+       to{
+        transform:translateX(0px);  
+       }
+      
+   }
+
+   .box1{
+    @include mybox();
+       background-color:cyan;
+       transform:translateX(0px);
+       animation-name: animi1;
+       animation-duration: 6s;
+       animation-timing-function: ease-out;
+
+       
+       
+   }
+  @keyframes animi1{
+       from{
+           transform:translateX(0px);
+       }
+       
+       50%{
+        transform:translateX(800px);
+       }
+       to{
+        transform:translateX(0px);  
+       }
+    }
+      
+
+       .box2{
+        @include mybox();
+           background-color:palevioletred;
+           transform:translateX(0px);
+           
+           animation-name: animi2;
+           animation-duration: 6s;
+           animation-timing-function: ease-in-out;
+
+       }
+       @keyframes animi2{
+           from{
+               transform:translateX(0px);
+           }
+           
+           50%{
+            transform:translateX(800px);
+           }
+           to{
+            transform:translateX(0px);  
+           }
+          
+       }
+
+   
+
+   .box3{
+    @include mybox();
+       background-color:aquamarine;
+       transform:translateX(0px);
+      
+       animation-name: animi3;
+       animation-duration: 6s ;
+       animation-timing-function: linear;
+
+       
+   }
+   @keyframes animi3{
+       from{
+           transform:translateX(0px);
+       }
+       
+       50%{
+        transform:translateX(800px);
+       }
+       to{
+        transform:translateX(0px);  
+       }
+      
+   }
+
    
 
 
