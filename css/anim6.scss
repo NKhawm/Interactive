@@ -1,0 +1,73 @@
+@mixin myMix {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin-left: 30px;
+    
+}
+body{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+.box{
+    @include myMix();
+    background-color:khaki;
+    transform:translateX(600px);
+    transition: all 3s ease-out;
+    &:hover{
+       transform: translateX(1200px);
+       background-color: rgb(167, 53, 12);
+       border-radius: 180px;
+}
+}
+.box1{
+    @include myMix();
+    background-color: lightcoral;
+    transform:rotate(180deg);
+    transition:all 3s ease-out;
+    transform:translateX(600px);
+    animation-name: myRo;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    
+}
+@keyframes myRo{
+    from{
+        transform:rotate(50deg) ;
+    }
+    50%{
+        transform:rotate(120deg);
+    }
+    to{
+        transform :rotate(0deg);
+    }
+}
+.box2{
+    @include myMix();
+    background-color: lightseagreen;
+    transform: translateX(600px);
+    transform:scaleX(1);
+        
+    transition: 4s ease-in-out;
+    &:hover{
+        
+        transform:  scaleY(1.4);
+        background-color: rgb(167, 14, 106);
+        
+        
+    }
+
+}
+.box3{
+    @include myMix();
+    background-color: palevioletred;
+    transition:2s ease-out;
+    &:hover{
+        transform:skewY(30deg );
+    }
+    
+}
+   
