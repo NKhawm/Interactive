@@ -1,14 +1,90 @@
+$myfont:'Montserrat', sans-serif;
+$fcolor:#3cf;
+$gcolor:#1ee592;
+
+h1{
+    font-family:$myfont;
+    font-size: 33px; 
+}
+h2{
+    font-family: $myfont;
+    font-size: 24px;
+}
+p{
+    font-family: $myfont;
+    font-size: 1.4em;
+}
+button{
+    font-size: 1.2em;
+}
+
 body{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: black;
+    background-color: white;
+    
 }
-.box{
-    border: 1px solid white;
-    background-color: aqua;
+header{
+    margin:0;
+    padding:0;
+    nav{
+        display:flex;
+        justify-content: space-between;
+        font-size: 20px;
+
+    }
+}
+
+.left-nav{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    gap:20px;
+    
+        a{
+            text-decoration: none;
+            &:hover{
+                color:$fcolor;
+            }
+    }
+
+}
+
+.right-nav{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    gap:20px;
+    a{
+        text-decoration: none;
+        &:hover{
+            color:$fcolor;
+        }
+    }
+    
+    
+}
+.container{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    gap:50px;
+}
+
+#btn{
+    border:2px solid grey;
+    padding:5px;
     border-radius: 10px;
-    width: 450px;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+.blue-box{
+    grid-area:1 1 ;
+    border: 1px solid white;
+    background-color:$fcolor;
+    border-radius: 10px;
+    width: 100%;
     padding:20px;
     margin-top: 50px;
     margin-left: 50px;
@@ -25,6 +101,35 @@ body{
     animation-name: up;
     animation-duration: 4s;
 }
+
+
+   
+  
+button{
+    
+    padding:15px;
+    border-radius: 15px;
+    
+
+}
+a{
+    color:black;
+}
+.green-box{
+    grid-column: 2;
+    grid-row:span 2;
+    width: 100%;
+    background-color: $gcolor;
+    padding:20px;
+    margin-top: 50px;
+    margin-right: 20px;
+    
+    border-radius: 10px;
+    h2{
+        font-family: $myfont;
+        font-size: 24px;
+    }
+}
 @keyframes up{
     from{
         transform: translateY(30px);
@@ -33,17 +138,4 @@ body{
     to{
         transform: translateY(-10px);
     }
-}
-
-   
-  
-button{
-    background-color: white;
-    padding:15px;
-    border-radius: 15px;
-    
-
-}
-a{
-    color:black;
 }
