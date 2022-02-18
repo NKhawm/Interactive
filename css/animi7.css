@@ -1,6 +1,7 @@
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 33px;
+  font-size: 48px;
+  line-height: 1.2em;
 }
 
 h2 {
@@ -11,6 +12,7 @@ h2 {
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4em;
+  line-height: 1.8em;
 }
 
 button {
@@ -81,28 +83,52 @@ header nav {
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 50px;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #btn {
   border: 2px solid grey;
-  padding: 5px;
+  padding: 8px;
   border-radius: 10px;
   margin-top: -10px;
   margin-right: 20px;
 }
 
+#download {
+  background: white;
+  width: 140px;
+  padding: 5px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
+}
+
+#download a {
+  text-decoration: none;
+}
+
+#learn {
+  font-size: medium;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: -50px;
+}
+
 .blue-box {
-  grid-area: 1 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
   border: 1px solid white;
   background-color: #3cf;
   border-radius: 10px;
-  width: 100%;
+  width: 88%;
+  max-height: 60vh;
   padding: 20px;
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 10px;
+  margin-left: 40px;
   opacity: 1;
 }
 
@@ -132,18 +158,67 @@ a {
 .green-box {
   -ms-grid-column: 2;
   grid-column: 2;
-  grid-row: span 2;
-  width: 100%;
+  grid-row: span 3;
+  width: 82%;
+  max-height: 87vh;
   background-color: #1ee592;
-  padding: 20px;
-  margin-top: 50px;
-  margin-right: 20px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
   border-radius: 10px;
 }
 
-.green-box h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+.yellow-box {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  width: 86%;
+  height: 25vh;
+  background-color: #fce354;
+  padding: 30px;
+  margin-top: -405px;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+
+/*img{
+    width:400px;
+    height: 185px;
+    float:right;
+    border-left:30px solid white;
+   // padding-bottom: 5px;
+    margin-top: 0px;
+    border-radius: 10px 10px 10px 50px;
+}*/
+.purple-box {
+  grid-column: span 2;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  background-color: #963eff;
+  margin-left: 40px;
+  margin-right: 30px;
+  padding-left: 30px;
+  padding-top: 200px;
+  border-radius: 10px;
+  margin-top: -570px;
+  max-height: 60vh;
+}
+
+.text1 {
+  position: relative;
+  -webkit-animation-name: up;
+          animation-name: up;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 50;
+  /* The width is the width of the web page */
 }
 
 @-webkit-keyframes up {

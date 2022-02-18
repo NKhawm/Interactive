@@ -1,10 +1,13 @@
 $myfont:'Montserrat', sans-serif;
 $fcolor:#3cf;
 $gcolor:#1ee592;
+$ycolor:#fce354;
+$pcolor:#963eff;
 
 h1{
     font-family:$myfont;
-    font-size: 33px; 
+    font-size: 48px; 
+    line-height: 1.2em;
 }
 h2{
     font-family: $myfont;
@@ -13,6 +16,7 @@ h2{
 p{
     font-family: $myfont;
     font-size: 1.4em;
+    line-height: 1.8em;
 }
 button{
     font-size: 1.2em;
@@ -68,26 +72,50 @@ header{
 .container{
     display:grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    gap:50px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+   
 }
 
-#btn{
+#btn {
     border:2px solid grey;
-    padding:5px;
+    padding:8px;
     border-radius: 10px;
     margin-top: -10px;
     margin-right: 20px;
 }
+
+
+#download{
+    background: white;
+    width: 140px;
+    padding: 5px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: medium;
+    a{
+        text-decoration: none;
+    }
+}
+#learn{
+    font-size: medium;
+   
+    position: absolute;
+    margin-left:160px;
+    margin-top: -50px;
+
+}
 .blue-box{
-    grid-area:1 1 ;
+    grid-column:1 ;
+    grid-row: 1;
     border: 1px solid white;
     background-color:$fcolor;
     border-radius: 10px;
-    width: 100%;
+    width: 88%;
+    max-height: 60vh;
     padding:20px;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
     opacity: 1;
     &:hover{
         opacity:0.1;
@@ -117,19 +145,65 @@ a{
 }
 .green-box{
     grid-column: 2;
-    grid-row:span 2;
-    width: 100%;
+    grid-row:span 3;
+    width: 82%;
+    max-height: 87vh;
     background-color: $gcolor;
-    padding:20px;
-    margin-top: 50px;
-    margin-right: 20px;
+    padding:30px;
+    margin-top: 10px;
+    margin-right:10px;
     
     border-radius: 10px;
-    h2{
-        font-family: $myfont;
-        font-size: 24px;
-    }
+    
 }
+.yellow-box{
+    grid-column: 1;
+    grid-row:3;
+    width: 86%;
+    height: 25vh;
+    background-color: $ycolor;
+    padding:30px;
+    margin-top: -405px;
+    margin-left:40px;
+    
+    border-radius: 10px;
+    
+}
+/*img{
+    width:400px;
+    height: 185px;
+    float:right;
+    border-left:30px solid white;
+   // padding-bottom: 5px;
+    margin-top: 0px;
+    border-radius: 10px 10px 10px 50px;
+}*/
+.purple-box{
+    grid-column: span 2;
+    grid-row:4;
+    background-color:$pcolor;
+    margin-left: 40px;
+    margin-right: 30px;
+    padding-left: 30px;
+    padding-top: 200px;
+    border-radius: 10px;
+    margin-top: -570px;
+    max-height: 60vh;
+
+}
+.text1{
+    position:relative;
+    animation-name: up;
+    animation-duration: 4s;
+}
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 50;
+    /* The width is the width of the web page */
+  }
+
 @keyframes up{
     from{
         transform: translateY(30px);
